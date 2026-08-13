@@ -34,7 +34,7 @@ This may not be optimal, but the method I used to check data types of each colum
 **customer.csv**
 |customer_id|gender|age|city|signup_date|loyalty_member|
 |-|-|-|-|-|-|
-|unique customer id (FOREIGN KEY) | Male/Female | Age in years | City of member | signup date (dd/mm/yyyy)| Is a loyalty member (yes/no)|
+|unique customer id (text) (FOREIGN KEY) | Male/Female (text)| Age in years (int)| City of member (text)| signup date (date, dd/mm/yyyy)| Is a loyalty member (text) (yes/no)|
 
 It makes sense to designate the unique customer id as the foreign key, since this directly and uniquely connects the customer data to the orders.
 
@@ -44,7 +44,7 @@ It makes sense to designate the unique customer id as the foreign key, since thi
 **products.csv**
 |product_id|product_name|category|price|
 |-|-|-|-|
-|unique product id (FOREIGN KEY) |product name (w/ item number)| product category (Beauty/Home/Electronic/...) | product price (GBP)|
+|unique product id (text) (FOREIGN KEY) |product name (text) (w/ item number)| product category (text) (Beauty/Home/Electronic/...) | product price (GBP) (decimal)|
 
 It makes sense to designate the unique product id as the foreign key, since this directly and uniquely connects the customer data to the orders.
 
