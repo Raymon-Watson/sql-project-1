@@ -2,8 +2,12 @@
 
 First SQL project towards learning data science. As such, I will be documenting the process thoroughly. Also, I will be working through the project without any outside help (as much as I can), and then later inspecting the process to optimize my workflow.
 
+**Note:** Detailed notes are contained below.
 
 Data taken from: https://www.kaggle.com/datasets/nudratabbas/sql-practice-dataset-1-easy-queries/discussion/680723
+
+
+
 
 
 # Initializing the project
