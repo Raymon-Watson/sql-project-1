@@ -7,6 +7,33 @@ First SQL project towards learning data science. As such, I will be documenting 
 Data taken from: https://www.kaggle.com/datasets/nudratabbas/sql-practice-dataset-1-easy-queries/discussion/680723
 
 
+## Flow Overview:
+
+1. Create a PostgreSQL database for the project.
+
+2. Run `sql/01_setup.sql` to create the required table.
+
+3. Import `data/sales.csv` into the `sales` table using pgAdmin:
+   - Right-click the `sales` table.
+   - Select **Import/Export Data**.
+   - Select **Import**.
+   - Choose `data/sales.csv`.
+   - Set the format to CSV.
+   - Enable **Header**.
+   - Use `,` as the delimiter.
+
+4. Run `sql/02_exploration.sql` to inspect the dataset.
+
+5. Run `sql/03_analysis.sql` to reproduce the analysis.
+
+
+
+
+**NOTE:** When importing, make sure to import orders last, since it relies directly on both other tables.
+
+
+
+
 
 
 
