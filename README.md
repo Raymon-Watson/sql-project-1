@@ -17,11 +17,19 @@ Initial inspection of the data using Microsoft Excel.
 **orders.csv (PRIMARY TABLE)**
 |order_id|customer_id| product_id |order_date|quantity|payment_method|
 |-|-|-|-|-|-|
-|unique order id (PRIMARY KEY)| unique customer id (referencing customers)| product id (referencing products) | order date (dd/mm/yyyy) | number of the item ordered| method of payment (card/cash/online)|
+|unique order id (text) (PRIMARY KEY)| unique customer id (text) (referencing customers)| product id (text) (referencing products) | order date (date dd/mm/yyyy) | number of the item ordered (int) | method of payment (text) (card/cash/online)|
 
 This table makes sense as the primary table, as it uniquely identifies each order, with each order having an associated customery_id (identifying the customer who ordered it, stored in customer.csv) and an associated product id (identifying the product purchased, stored in products.csv).
 
 I think it makes sense to make the unique order id the PRIMARY KEY, as it uniquely identifies each order. I considered making it a combination of customer_id and product_id, but this does not uniquely identify each order, since a customer may purchase the same product on different dates, plus it is best to keep it as simple as possible.
+
+This may not be optimal, but the method I used to check data types of each column is by using **=TYPE(CELL)** in excel, which outputs a number and is associated as following:
+- 1 : Number (int,decimal,date,time)
+- 2 : Text (strings, numbers formatted as text)
+- 4 : Logical (True/False)
+- 16 : Error (NA)
+- 64 : Array
+
 
 **customer.csv**
 |customer_id|gender|age|city|signup_date|loyalty_member|
@@ -29,6 +37,8 @@ I think it makes sense to make the unique order id the PRIMARY KEY, as it unique
 |unique customer id (FOREIGN KEY) | Male/Female | Age in years | City of member | signup date (dd/mm/yyyy)| Is a loyalty member (yes/no)|
 
 It makes sense to designate the unique customer id as the foreign key, since this directly and uniquely connects the customer data to the orders.
+
+
 
 
 **products.csv**
