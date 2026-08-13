@@ -19,12 +19,12 @@ Initial inspection of the data using Microsoft Excel.
 **customer.csv**
 |customer_id|gender|age|city|signup_date|loyalty_member|
 |-|-|-|-|-|-|
-|unique customer id| Male/Female| Age in years| signup date (dd/mm/yyyy)| Is a loyalty member (yes/no)|
+|unique customer id | Male/Female | Age in years | City of member | signup date (dd/mm/yyyy)| Is a loyalty member (yes/no)|
 
 
 **products**
 |product_id|product_name|category|price|
 |-|-|-|-|
-|unique product id|product name (w/ item number)| product category (Beauty/Home/Electronic/...) | product price (USD)|
+|unique product id|product name (w/ item number)| product category (Beauty/Home/Electronic/...) | product price (GBP)|
 
 
