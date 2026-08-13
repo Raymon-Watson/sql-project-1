@@ -56,6 +56,8 @@ It makes sense to designate the unique product id as the foreign key, since this
 
 ## Creating the setup.sql file
 
+Here, we create the table structures, including identifying the primary and foreign keys, to be used when we import the data from the csv files contained in the data folder. In the previous section, we identified all the data types, and these will be used here to make sure all the columns are correctly designated.
+
 
 
 
