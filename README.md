@@ -1,9 +1,13 @@
 # sql-project-1
 
-First SQL project towards learning data science. As such, I will be documenting the process thoroughly.
+First SQL project towards learning data science. As such, I will be documenting the process thoroughly. Also, I will be working through the project without any outside help (as much as I can), and then later inspecting the process to optimize my workflow.
 
 
 Data taken from: https://www.kaggle.com/datasets/nudratabbas/sql-practice-dataset-1-easy-queries/discussion/680723
+
+
+# Initializing the project
+
 
 ## Initial inspection
 
@@ -27,12 +31,17 @@ I think it makes sense to make the unique order id the PRIMARY KEY, as it unique
 It makes sense to designate the unique customer id as the foreign key, since this directly and uniquely connects the customer data to the orders.
 
 
-**products**
+**products.csv**
 |product_id|product_name|category|price|
 |-|-|-|-|
 |unique product id (FOREIGN KEY) |product name (w/ item number)| product category (Beauty/Home/Electronic/...) | product price (GBP)|
 
 It makes sense to designate the unique product id as the foreign key, since this directly and uniquely connects the customer data to the orders.
+
+
+
+## Creating the setup.sql file
+
 
 
 
